@@ -3,7 +3,6 @@ import "../GlobalCss/Home.css";
 import NavBar from "../components/NavBar";
 import GetEarly from "../components/GetEarly";
 import WTF from "../components/WTF";
-import AnimationBar from "../components/animationBar";
 
 const Home = () => {
   return (
@@ -25,7 +24,6 @@ const Home = () => {
         <WTF />
       </div>
       <GetEarly />
-      <AnimationBar/>
     </div>
   );
 };
