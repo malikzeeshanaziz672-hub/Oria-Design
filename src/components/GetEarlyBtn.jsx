@@ -1,5 +1,5 @@
 import React from 'react'
-import "../GlobalCss/getEarlyBtn.css"
+import "../GlobalCss/GetEarlyBtn.css"
 
 const GetEarlyBtn = ({text}) => {
   return (
