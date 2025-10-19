@@ -1,0 +1,8 @@
+:root{
+    --bg-color:  #484AF6;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}

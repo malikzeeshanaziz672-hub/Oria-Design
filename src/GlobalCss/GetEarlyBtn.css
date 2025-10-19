@@ -1,0 +1,9 @@
+.getEarlyBtn button{
+    background-color: var(--bg-color);
+    width: 133px;
+height: 40px;
+color: white;
+cursor: pointer;
+border-radius: 10px;
+border: none;
+}

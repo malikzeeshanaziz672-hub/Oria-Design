@@ -1,0 +1,144 @@
+
+.navBar-container {
+  height: 135px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 0 60px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+  height: 60px;
+  cursor: pointer;
+}
+
+.navlinks ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks ul li {
+    list-style: none;
+  align-items: center;
+}
+
+.navBar-container ul li a {
+  text-decoration: none;
+  margin-right: 60px;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navlinks ul li a:hover {
+  color: #ffdd55;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navBar-btn button {
+  width: 140px;
+  height: 46px;
+  background-color: #08192b;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.navBar-btn button:hover {
+  background-color: #ffdd55;
+  color: #08192b;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #08192b;
+}
+
+
+@media (max-width: 768px) {
+  .navBar-container {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+.navlinks ul li{
+display: flex;
+flex-direction: column;
+}
+  .menu-icon {
+    display: block;
+    z-index: 200;
+  }
+
+  .desktop-btn {
+    display: none;
+  }
+
+  .navlinks  {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    /* display: flex; */
+    flex-direction: column;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    /* flex-direction: column-reverse; */
+    align-items: center;
+    justify-content: center;
+    transition: right 0.4s ease-in-out;
+    z-index: 150;
+  }
+
+  .navlinks.active {
+    right: 0;
+  }
+
+  .navlinks ul li {
+    flex-direction: column;
+  }
+
+  .navlinks ul li a {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+
+  .mobile-btn {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .mobile-btn button {
+    width: 180px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navlinks ul li a {
+   
+    font-size: 1rem;
+  }
+
+  .mobile-btn button {
+    width: 160px;
+    height: 46px;
+  }
+}

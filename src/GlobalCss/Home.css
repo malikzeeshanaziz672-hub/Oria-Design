@@ -1,0 +1,12 @@
+.WTFh1{
+       left: 39%;
+    position: absolute;
+    text-align: center;
+    font-size: 130px;
+    margin: 0 auto;
+    width: 355px;
+height: 160px;
+background-color: var(--bg-color);
+color: white;
+border-radius: 35px;
+}
